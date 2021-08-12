@@ -3,32 +3,15 @@ body {
     font-size: 12px;
     margin: 0;
 }
-.banner__container::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.4);
-    content: "";
-}
 .flex{
     display: flex;
 }
 .container{
-    width: 80%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 10px auto;
 }
 header #bars{
     display: none;
-}
-@media (max-width: 500px){
-    header #bars{
-        display: block;
-    }
-    header nav{
-        display:none;
-    }
 }
 header{
     align-items: center;
@@ -46,4 +29,60 @@ nav a:last-child{
 .flex_center{
     align-items: center;
     justify-content: center;
+}
+.banner__container .flex{
+    flex-flow: column wrap;
+    color: white;
+    position: absolute;
+}
+.banner__container::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    content: "";
+}
+.banner__container{
+    position: relative;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 100%;
+    height: 700px;
+}
+.banner__container div a{
+    text-decoration: none;
+    background-color: rgb(214, 63, 63);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 10px;
+    box-shadow: 0 3px 0 red;
+}
+.banner__container div h1{
+    font-size: 60px;
+    margin: 0;
+}
+.banner__container div h3{
+    margin: 0;
+}
+.grid{
+    display: grid;
+}
+@media (max-width: 500px){
+    header #bars{
+        display: block;
+    }
+    header nav{
+        display:none;
+    }
 }
