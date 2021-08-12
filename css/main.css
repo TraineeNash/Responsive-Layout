@@ -1,0 +1,49 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+.banner__container::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    content: "";
+}
+.flex{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header #bars{
+    display: none;
+}
+@media (max-width: 500px){
+    header #bars{
+        display: block;
+    }
+    header nav{
+        display:none;
+    }
+}
+header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+.flex_center{
+    align-items: center;
+    justify-content: center;
+}
